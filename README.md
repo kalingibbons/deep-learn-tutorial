@@ -24,7 +24,7 @@ In order to set up the necessary environment:
    conda config --set channel_priority strict
    ```
    ```
-   conda env create -f environment.yml -p ./.env
+   conda env create -f environment.lock.yml -p ./.env
    ```
 
    > Note: the following command assumes you left channel_priority as its default
