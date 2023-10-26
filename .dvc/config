@@ -1,0 +1,7 @@
+[core]
+    remote = deep-learn-tutorial-remote
+    autostage = true
+['remote "deep-learn-tutorial-remote"']
+    url = https://filedn.com/lriSH5oSvaLB2jWyVzFMJB8/deep-learn-tutorial-dvc-store
+['remote "push-remote"']
+    url = P:\Public Folder\deep-learn-tutorial-dvc-store

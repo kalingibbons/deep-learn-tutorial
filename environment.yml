@@ -1,11 +1,11 @@
 name: deep-learn-tutorial
 channels:
+  - pytorch
   - conda-forge
   - defaults
-  # - pytorch
   # - fastai
 dependencies:
-  - python>=3.8
+  - python
   - pip
   # BASICS
   - numpy
@@ -21,16 +21,19 @@ dependencies:
   # - altair
   # - yellowbrick
   # ML, STATS & DEEP LEARNING
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::cpuonly
   # - statsmodels
-  # - scikit-learn
+  - scikit-learn
   # - sktime
   # - tslearn
   # - xgboost
   # - catboost
   # - lightgbm
-  # - pytorch
   # - fastai  # activate fastai channel above!
-  - tensorflow
+  # - tensorflow
   # - keras
   # - spacy
   - optuna
@@ -39,7 +42,7 @@ dependencies:
   # - snakeviz
   - pip:
     - -e .  # install git checkout of deep-learn-tutorial in editable mode
-    - albumentations
+    # - albumentations
     # add here only pip-packages that are not available in conda/conda-forge! E.g.:
     # - icecream
     # - jax
@@ -50,6 +53,8 @@ dependencies:
 
   # DEVELOPMENT ONLY PACKAGES (could also be kept in a separate environment file)
   - jupyterlab
+  - notebook
+  - ipywidgets
   - pycodestyle
   - pydocstyle
   - black
