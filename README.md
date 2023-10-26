@@ -36,6 +36,11 @@ In order to set up the necessary environment:
    conda activate ./.env
    ```
 
+3. run jupyter lab
+   ```
+   jupyter lab
+   ```
+
 Then take a look in the `notebooks` folders.
 
 ## Dependency Management & Reproducibility
