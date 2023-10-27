@@ -13,13 +13,37 @@
 
 > Quick tutorial on deep learning for Introduction to Data Science
 
-A longer description of your project goes here...
+Two notebooks showing simple deep learning models;
+
+1. Regression
+
+2. Image classification
 
 ## Installation
 
+> Note: deep learning environments are large, if you want to speed up your [conda] commands, you can use [mamba]. See _Installation_ steps 1-4 of [this repo](https://github.com/bsu-mbe-cbl/paraview-for-mesh-viewing#installation)
+
 In order to set up the necessary environment:
 
-1. create a local environment stored in `.env` with the help of [conda]:
+1. Download the repository by clicking the big green \[code\] button on the github page, and downloading the ZIP archive.
+
+> Note: Repositories act as distributed backups and make collaboration on programming projects more efficient, so learning to use git and github together is ***really*** useful in research.
+
+2. Unzip the archive to an easy-to-locate place
+
+3. Open the anaconda prompt
+
+4. Print your current directory to see where the prompt starts
+   ```
+   pwd
+   ```
+
+5. Change the directory to your easy-to-locate-place
+   ```
+   cd easy-to-locate-place
+   ```
+
+6. create a local environment stored in `.env` with the help of [conda]:
    ```
    conda config --set channel_priority strict
    ```
@@ -31,12 +55,12 @@ In order to set up the necessary environment:
    ```
    conda config --set channel_priority flexible
    ```
-2. activate the new environment with:
+7. activate the new environment with:
    ```
    conda activate ./.env
    ```
 
-3. run jupyter lab
+8. run jupyter lab
    ```
    jupyter lab
    ```
